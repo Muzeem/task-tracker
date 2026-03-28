@@ -385,14 +385,14 @@ export default function Home() {
           <TabsList className="mb-8 grid h-11 w-full grid-cols-2 gap-1 rounded-xl border border-zinc-800/50 bg-zinc-900/40 p-1 sm:max-w-xs">
             <TabsTrigger
               value="tasks"
-              className="flex-none gap-2 rounded-lg px-3 py-2 text-sm font-medium text-zinc-500 transition-colors data-active:bg-zinc-100 data-active:text-zinc-950 data-active:shadow-none"
+              className="flex-none gap-2 rounded-lg px-3 py-2 text-sm font-medium text-zinc-500 data-active:bg-zinc-100 data-active:text-zinc-950 dark:data-active:bg-zinc-100 dark:data-active:text-zinc-950"
             >
               <ListTodo className="size-4 shrink-0" aria-hidden />
               Tasks
             </TabsTrigger>
             <TabsTrigger
               value="notes"
-              className="flex-none gap-2 rounded-lg px-3 py-2 text-sm font-medium text-zinc-500 transition-colors data-active:bg-zinc-100 data-active:text-zinc-950 data-active:shadow-none"
+              className="flex-none gap-2 rounded-lg px-3 py-2 text-sm font-medium text-zinc-500 data-active:bg-zinc-100 data-active:text-zinc-950 dark:data-active:bg-zinc-100 dark:data-active:text-zinc-950"
             >
               <StickyNote className="size-4 shrink-0" aria-hidden />
               Notes
