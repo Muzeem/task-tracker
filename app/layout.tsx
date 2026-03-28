@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Task Tracker",
-  description: "Minimalist distraction-free task tracking app",
+  title: "Focus · Tasks & notes",
+  description: "Minimal tasks and notes, saved on your device.",
 };
 
 export default function RootLayout({
