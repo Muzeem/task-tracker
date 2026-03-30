@@ -13,8 +13,54 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Focus · Tasks & notes",
-  description: "Minimal tasks and notes, saved on your device.",
+  metadataBase: new URL("https://tracker.kelby.in"),
+  title: {
+    default: "Focus · Tasks & Notes",
+    template: "%s · Focus",
+  },
+  description:
+    "Simple task and note tracker with local-first storage for quick daily planning.",
+  applicationName: "Focus",
+  keywords: [
+    "task tracker",
+    "notes app",
+    "todo",
+    "productivity",
+    "local storage",
+  ],
+  authors: [{ name: "Focus" }],
+  creator: "Focus",
+  publisher: "Focus",
+  category: "productivity",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://tracker.kelby.in",
+    siteName: "Focus",
+    title: "Focus · Tasks & Notes",
+    description:
+      "Simple task and note tracker with local-first storage for quick daily planning.",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary",
+    title: "Focus · Tasks & Notes",
+    description:
+      "Simple task and note tracker with local-first storage for quick daily planning.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export default function RootLayout({
